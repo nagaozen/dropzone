@@ -620,7 +620,7 @@ class Dropzone extends Em
     fileReader = new FileReader
 
     fileReader.onload = =>
-      img = new Image
+      img = document.createElement "img"
 
       img.onload = =>
         file.width = img.width
